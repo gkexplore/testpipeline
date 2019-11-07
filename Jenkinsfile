@@ -8,9 +8,10 @@ pipeline {
                 withMaven(maven : 'maven_3_6_2') {
                     sh 'mvn clean compile'
                 }
-                def arg = ["Groovy","Java","Python",”nodeJS”]
-                println arg.class
             }
+
+            def arg = ["Groovy","Java","Python",”nodeJS”]
+            println arg.class
         }
 
         stage ('Testing Stage') {
