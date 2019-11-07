@@ -8,7 +8,7 @@ pipeline {
                     sh 'mvn clean compile'
                 }
                 script{
-                    def arg = ["Groovy","Java","Python",”nodeJS”]
+                    def arg = ["Groovy","Java","Python"]
                     println arg.class
                  }
             }
