@@ -10,7 +10,7 @@ pipeline {
                 script{
                      x=10
                      for(i in 0..<x){
-                       println val
+                       println i
                      }
                  }
             }
