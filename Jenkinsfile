@@ -8,11 +8,10 @@ pipeline {
                     sh 'mvn clean compile'
                 }
                 script{
-                   def repeat(x=10){
+                     x=10
                      for(i in 0..<x){
                        println val
                      }
-                   }
                  }
             }
 
