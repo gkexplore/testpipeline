@@ -8,10 +8,8 @@ pipeline {
                     sh 'mvn clean compile'
                 }
                 script{
-                     x=10
-                     for(i in 0..<x){
-                       println i
-                     }
+                     def externalMethod = load("test.groovy")
+                     externalMethod.exampleMethod()
                  }
             }
 
