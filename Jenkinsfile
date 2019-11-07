@@ -8,8 +8,11 @@ pipeline {
                     sh 'mvn clean compile'
                 }
                 script{
-                    def arg = ["Groovy","Java","Python"]
-                    println arg.class
+                   def repeat(x=10){
+                     for(i in 0..<x){
+                       println val
+                     }
+                   }
                  }
             }
 
